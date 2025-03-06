@@ -27,7 +27,8 @@ public class Main {
                     System.out.println("Ingrese el isbn del libro "+titulo+":");
                     String isbn = scanner.nextLine();
 
-                    Libro libro = new Libro(titulo,autor,isbn,true);
+                    Libro libro = new Libro
+                            (titulo,autor,isbn,true);
                     biblioteca.agregarLibros(libro);
                     Esperar.esperar(2);
                     break;
