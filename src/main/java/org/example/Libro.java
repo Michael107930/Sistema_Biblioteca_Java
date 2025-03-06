@@ -34,5 +34,8 @@ public class Libro {
         System.out.println("Disponible"+(disponible?"Si":"No"));
         System.out.println("|---------------------------------|");
     }
+
+    public void mostarInfo() {
+    }
 }
 
