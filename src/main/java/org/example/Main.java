@@ -31,23 +31,33 @@ public class Main {
                             (titulo,autor,isbn,true);
                     biblioteca.agregarLibros(libro);
                     Esperar.esperar(2);
+                    Esperar.esperar(2);
+                    biblioteca.listarLibros();
                     break;
                 case 2:
                     System.out.println("Ingrese el titulo del libro que busca: ");
                     String tituloUsuario = scanner.nextLine();
+
                     biblioteca.buscarPorTitulo(tituloUsuario);
                     Esperar.esperar(3);
+                    System.out.println("Digita algo para continuar:");
+                    String continua = scanner.nextLine();
                     break;
                 case 3:
                     System.out.println("Ingrese el autor del libro que busca: ");
                     String autorUsuario = scanner.nextLine();
                     biblioteca.buscarPorAutor(autorUsuario);
                     Esperar.esperar(3);
+                    System.out.println("Digita algo para continuar:");
+                    String contin = scanner.nextLine();
                     break;
                 case 4:
                     biblioteca.listarLibros();
                     Esperar.esperar(3);
+                    System.out.println("Digita algo para continuar:");
+                    String continuar = scanner.nextLine();
                     break;
+
                 case 5:
                     System.out.println("Gracias por usar la Biblioteca Virtual");
                     System.out.println("Saliendo...");

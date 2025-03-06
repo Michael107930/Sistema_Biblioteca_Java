@@ -34,5 +34,15 @@ public class Libro {
         System.out.println("Disponible"+(disponible?"Si":"No"));
         System.out.println("|---------------------------------|");
     }
+
+    public void mostarInfo() {
+        System.out.println("📖 Título: " + titulo);
+        System.out.println("✍️ Autor: " + autor);
+        System.out.println("🔢 ISBN: " + isbn);
+        System.out.println("📌 Disponible: " + (disponible ? "Sí" : "No"));
+        System.out.println("---------------------------------");
+
+
+    }
 }
 
